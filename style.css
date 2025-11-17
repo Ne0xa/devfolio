@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #FBF5F3;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: #0F0E0E;
+    color: #FBF5F3;
+}
+
+.dark-mode header {
+    background: #000;
+}
+
+.dark-mode nav ul li a {
+    color: #FBF5F3;
+}
+
+.dark-mode button {
+    background: #8daa9d;
+}
+
+/* Nav bar */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #522B47;
+    text-shadow: 0 0 10px #a12a76, 0 0 20px #a12a76;
+}
+
+/* Tab */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-btn:hover {
+    color: #8daa9d;
+    text-shadow: 0 0 10px #8daa9d, 0 0 20px #8daa9d;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* main */
+main {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Button */
+button {
+    background: #8daa9d;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #8daa9d;
+    box-shadow: 0 0 10px #8daa9d, 0 0 20px #8daa9d;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body, p {
+  font-family: 'Montserrat', sans-serif;
+}
